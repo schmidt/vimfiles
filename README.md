@@ -8,15 +8,15 @@ inspired by others.
 
 Clone the repository into `~/.vim`
 
-  git clone https://github.com/schmidt/vimfiles ~/.vim
+    git clone https://github.com/schmidt/vimfiles ~/.vim
 
 Initialize all submodules
 
-  cd ~/.vim
-  git submodule update --init
+    cd ~/.vim
+    git submodule update --init
 
 Activate the settings by creating a `.vimrc` which uses these `vimfiles`
 
-  echo 'source ~/.vim/vimrc' > ~/.vimrc
+    echo 'source ~/.vim/vimrc' > ~/.vimrc
 
 Your done.
