@@ -114,3 +114,9 @@ autocmd vimrc BufWritePre * :call Preserve("%s/\\s\\+$//e")
 " add current git branch to status line
 set laststatus=2
 set statusline=%<%f\ %{fugitive#statusline()}\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+
+" syntastics   *************************************************************
+" Enable status line indicator
+set statusline+=%{SyntasticStatuslineFlag()}
+" Enable signs interface
+let g:syntastic_enable_signs=1
