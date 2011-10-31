@@ -7,6 +7,9 @@ augroup end
 " Load pathogen ***************************************************************
 call pathogen#infect()
 
+" Initialize helptags
+" call pathogen#helptags()
+
 " Misc ************************************************************************
 set backspace=indent,eol,start
 set matchpairs+=<:>
