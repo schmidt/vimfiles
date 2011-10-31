@@ -1,6 +1,6 @@
 # schmidt's vimfiles
 
-This is my very own collection of vim settings, mostly containing of plugins
+This is my very own collection of vim settings, mostly consisting of plugins
 written by other smart minds and some customizations by myself - probably also
 inspired by others.
 
