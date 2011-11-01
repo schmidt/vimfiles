@@ -120,3 +120,5 @@ set statusline=%<%f\ %{fugitive#statusline()}\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 set statusline+=%{SyntasticStatuslineFlag()}
 " Enable signs interface
 let g:syntastic_enable_signs=1
+" let :E open netrw again - to avoid conflicts with Errors
+command! -nargs=* E Explore
