@@ -19,4 +19,4 @@ Activate the settings by creating a `.vimrc` which uses these `vimfiles`
 
     echo 'source ~/.vim/vimrc' > ~/.vimrc
 
-Your done.
+You're done.
