@@ -123,3 +123,6 @@ set statusline+=%{SyntasticStatuslineFlag()}
 let g:syntastic_enable_signs=1
 " let :E open netrw again - to avoid conflicts with Errors
 command! -nargs=* E Explore
+" fancier signs for errors and warnings in syntastic
+sign define SyntasticError text=⚡ texthl=error
+sign define SyntasticWarning text=→ texthl=todo
