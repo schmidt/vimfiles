@@ -57,8 +57,9 @@ set ignorecase " Ignore case when searching
 set smartcase  " Ignore case when searching lowercase
 
 " Insert New Line *************************************************************
-map <S-Enter> O<ESC> " awesome, inserts new line without going into insert mode
-map <Enter> o<ESC>
+" awesome, inserts new line without going into insert mode
+map <S-Enter> O<ESC>==
+map <Enter> o<ESC>==
 
 " Filetype changes ************************************************************
 au BufNewFile,BufRead *.jspf set filetype=jsp
@@ -115,7 +116,7 @@ autocmd vimrc BufWritePre * :call Preserve("%s/\\s\\+$//e")
 set laststatus=2
 set statusline=%<%f\ %{fugitive#statusline()}\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
-" syntastics   *************************************************************
+" syntastic   *************************************************************
 " Enable status line indicator
 set statusline+=%{SyntasticStatuslineFlag()}
 " Enable signs interface
