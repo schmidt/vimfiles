@@ -26,8 +26,8 @@ set scrolloff=2  " keep the current line two lines above fold while scrolling
 
 " Highlight lines longer than 80 chars ****************************************
 set textwidth=80
-set cc=+1,+2
 hi ColorColumn ctermbg=lightgrey guibg=lightgrey
+match ColorColumn '\%80v.*'
 
 " Tabstops ********************************************************************
 set ts=4 sts=4 sw=4 expandtab
