@@ -45,7 +45,7 @@ filetype plugin indent on
 set equalalways " Multiple windows, when created, are equal in size
 
 " Improve behavior when using tab completion in command mode
-set wildmode=longest,list,full
+set wildmode=longest,list
 set wildmenu
 
 
