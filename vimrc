@@ -63,7 +63,7 @@ map <Enter> o<ESC>==
 
 " Filetype changes ************************************************************
 au BufNewFile,BufRead *.jspf set filetype=jsp
-au BufNewFile,BufRead config.ru,Gemfile set filetype=ruby
+au BufNewFile,BufRead config.ru,Gemfile,*.api.rsb set filetype=ruby
 
 
 " Emacs-style editing on the command-line *************************************
