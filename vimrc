@@ -100,11 +100,21 @@ function! Preserve(command)
   call cursor(l, c)
 endfunction
 
-" strip trailing white space only on non-empty lines
-" autocmd BufWritePre * :call Preserve("%s/\\(\\S\\+\\)\\s\\+$/\\1/e")
+function! StripTrailingWhitespace()
+  " Only strip if the b:noStripeWhitespace variable isn't set
+  if exists('b:noStripWhitespace')
+    return
+  endif
 
-" strip trailing white space on all lines
-autocmd vimrc BufWritePre * :call Preserve("%s/\\s\\+$//e")
+  " strip trailing white space only on non-empty lines
+  " autocmd BufWritePre * :call Preserve("%s/\\(\\S\\+\\)\\s\\+$/\\1/e")
+
+  " strip trailing white space on all lines
+  call Preserve("%s/\\s\\+$//e")
+endfun
+
+autocmd vimrc BufWritePre * call StripTrailingWhitespace()
+autocmd vimrc BufNewFile,BufRead,BufFilePost donotstriponfilesmatchingthisexpression let b:noStripWhitespace=1
 
 
 
