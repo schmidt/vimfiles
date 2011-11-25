@@ -62,8 +62,8 @@ map <S-Enter> O<ESC>==
 map <Enter> o<ESC>==
 
 " Filetype changes ************************************************************
-autocmd vimrc BufNewFile,BufRead *.jspf set filetype=jsp
-autocmd vimrc BufNewFile,BufRead config.ru,Gemfile,*.api.rsb set filetype=ruby
+autocmd vimrc BufNewFile,BufRead,BufFilePost *.jspf set filetype=jsp
+autocmd vimrc BufNewFile,BufRead,BufFilePost config.ru,Gemfile,*.api.rsb set filetype=ruby
 
 
 " Emacs-style editing on the command-line *************************************
