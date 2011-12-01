@@ -124,6 +124,9 @@ autocmd vimrc BufNewFile,BufRead,BufFilePost donotstriponfilesmatchingthisexpres
 
 " Plugins *********************************************************************
 
+" YankRing
+let g:yankring_history_file = '.vim-yankring'
+
 " fugitive.vim *************************************************************
 " add current git branch to status line
 set laststatus=2
