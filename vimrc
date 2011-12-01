@@ -18,6 +18,9 @@ set showcmd
 set vb t_vb= " Turn off bell, this could be more annoying, but I'm not sure how
 syntax on
 
+" Sudo to write - http://forrst.com/posts/Use_w_to_sudo_write_a_file_with_Vim-uAN
+cmap w!! w !sudo tee % >/dev/null
+
 " Automatically load vimrc after it was updated
 autocmd vimrc bufwritepost .vimrc,vimrc source $MYVIMRC
 
