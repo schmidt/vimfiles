@@ -40,6 +40,3 @@
 [submodule "bundle/vim-matchit"]
 	path = bundle/vim-matchit
 	url = https://github.com/vim-scripts/matchit.zip.git
-[submodule "bundle/vim-lusty"]
-	path = bundle/vim-lusty
-	url = https://github.com/sjbach/lusty.git
