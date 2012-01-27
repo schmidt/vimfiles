@@ -40,3 +40,9 @@
 [submodule "bundle/vim-matchit"]
 	path = bundle/vim-matchit
 	url = https://github.com/vim-scripts/matchit.zip.git
+[submodule "bundle/vim-tlib"]
+	path = bundle/vim-tlib
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "bundle/vim-tmru"]
+	path = bundle/vim-tmru
+	url = https://github.com/tomtom/tmru_vim.git

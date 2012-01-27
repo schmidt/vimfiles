@@ -142,3 +142,6 @@ command! -nargs=* E Explore
 " fancier signs for errors and warnings in syntastic
 sign define SyntasticError text=⚡ texthl=error
 sign define SyntasticWarning text=→ texthl=todo
+
+" tmru ********************************************************************
+noremap <leader>' :TRecentlyUsedFiles<cr>
