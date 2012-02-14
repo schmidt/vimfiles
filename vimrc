@@ -24,8 +24,6 @@ cmap w!! w !sudo tee % >/dev/null
 " Automatically load vimrc after it was updated
 autocmd vimrc bufwritepost .vimrc,vimrc source $MYVIMRC
 
-" open MacVim with current buffer
-command Mvim execute ':silent !open %' | q!
 
 " Scrolling *******************************************************************
 set scrolloff=2  " keep the current line two lines above fold while scrolling
@@ -144,6 +142,15 @@ autocmd vimrc BufWritePre * call StripTrailingWhitespace()
 autocmd vimrc BufNewFile,BufRead,BufFilePost donotstriponfilesmatchingthisexpression let b:noStripWhitespace=1
 
 
+" Open MacVim with current buffer
+function! Mvim()
+  if (getbufvar(@%, "&mod"))
+    echo 'Please save first!'
+  else
+    execute ":silent !mvim " . @% | q
+  endif
+endfun
+command! Mvim :execute ':call Mvim()'
 
 
 " Plugins *********************************************************************
