@@ -64,6 +64,27 @@ set smartcase  " Ignore case when searching lowercase
 map <S-Enter> O<ESC>==
 map <Enter> o<ESC>==
 
+" Moving lines (http://vim.wikia.com/wiki/Moving_lines_up_or_down) ************
+" if this ever causes problems - try http://vimcasts.org/episodes/bubbling-text/
+" instead
+nnoremap <C-j> :m+<CR>==
+nnoremap <C-k> :m-2<CR>==
+inoremap <C-j> <Esc>:m+<CR>==gi
+inoremap <C-k> <Esc>:m-2<CR>==gi
+vnoremap <C-j> :m'>+<CR>gv=gv
+vnoremap <C-k> :m-2<CR>gv=gv
+
+nnoremap <C-Down> :m+<CR>==
+nnoremap <C-Up> :m-2<CR>==
+inoremap <C-Down> <Esc>:m+<CR>==gi
+inoremap <C-Up> <Esc>:m-2<CR>==gi
+vnoremap <C-Down> :m'>+<CR>gv=gv
+vnoremap <C-Up> :m-2<CR>gv=gv
+
+
+
+
+
 " Filetype changes ************************************************************
 autocmd vimrc BufNewFile,BufRead,BufFilePost *.jspf set filetype=jsp
 autocmd vimrc BufNewFile,BufRead,BufFilePost config.ru,Gemfile,*.api.rsb set filetype=ruby
