@@ -21,7 +21,7 @@ Activate the settings by creating a `.vimrc` which uses these `vimfiles`
 
 You're done.
 
-# License
+## License
 
 Copyright (c) 2012 Gregor Schmidt
 
