@@ -150,7 +150,7 @@ function! Mvim()
     execute ":silent !mvim " . @% | q
   endif
 endfun
-command! Mvim :execute ':call Mvim()'
+command! Mvim :call Mvim()
 
 
 " Plugins *********************************************************************
