@@ -143,14 +143,17 @@ autocmd vimrc BufNewFile,BufRead,BufFilePost donotstriponfilesmatchingthisexpres
 
 
 " Open MacVim with current buffer
-function! Mvim()
-  if (getbufvar(@%, "&mod"))
-    echo 'Please save first!'
+function! Mvim(bang)
+  if (a:bang != '!' && getbufvar(@%, "&mod"))
+    echohl ErrorMsg
+    echo 'No write since last change (add ! to override)'
+    echohl None
   else
-    execute ":silent !mvim " . @% | q
+    execute ":silent !mvim " . @% | q!
   endif
 endfun
-command! Mvim :call Mvim()
+
+command! -bang Mvim :call Mvim('<bang>')
 
 
 " Plugins *********************************************************************
