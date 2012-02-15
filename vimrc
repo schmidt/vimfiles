@@ -65,6 +65,8 @@ set smartcase  " Ignore case when searching lowercase
 map <S-Enter> O<ESC>==
 map <Enter> o<ESC>==
 
+map <Leader>/ :nohlsearch<CR>
+
 " Moving lines (http://vim.wikia.com/wiki/Moving_lines_up_or_down) ************
 " if this ever causes problems - try http://vimcasts.org/episodes/bubbling-text/
 " instead
