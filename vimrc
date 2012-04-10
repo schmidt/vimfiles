@@ -23,6 +23,9 @@ syntax on
 " Sudo to write - http://forrst.com/posts/Use_w_to_sudo_write_a_file_with_Vim-uAN
 cnoremap w!! w !sudo tee % >/dev/null
 
+" expand %% to directory of current file
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+
 " Automatically load vimrc after it was updated
 autocmd vimrc bufwritepost .vimrc,vimrc source $MYVIMRC
 
