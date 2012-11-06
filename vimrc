@@ -165,6 +165,9 @@ endfun
 
 command! -bang Mvim :call Mvim('<bang>')
 
+set foldmethod=indent
+set foldlevel=20
+
 
 " Plugins *********************************************************************
 
