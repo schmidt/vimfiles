@@ -179,6 +179,12 @@ set foldmethod=indent
 set foldlevel=20
 
 
+if has('gui_running')
+    set guioptions+=T " add toolbar.
+endif
+
+
+
 " Plugins *********************************************************************
 
 " YankRing
