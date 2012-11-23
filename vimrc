@@ -85,6 +85,10 @@ inoremap <C-k> <Esc>:m-2<CR>==gi
 vnoremap <C-j> :m'>+<CR>gv=gv
 vnoremap <C-k> :m-2<CR>gv=gv
 
+nnoremap <C-S-j> :copy.<CR>
+nnoremap <C-S-k> :copy-<CR>
+
+
 nnoremap <C-Down> :m+<CR>==
 nnoremap <C-Up> :m-2<CR>==
 inoremap <C-Down> <Esc>:m+<CR>==gi
@@ -92,6 +96,8 @@ inoremap <C-Up> <Esc>:m-2<CR>==gi
 vnoremap <C-Down> :m'>+<CR>gv=gv
 vnoremap <C-Up> :m-2<CR>gv=gv
 
+nnoremap <C-S-Down> :copy.<CR>
+nnoremap <C-S-Up> :copy-<CR>
 
 
 
