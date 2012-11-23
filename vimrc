@@ -42,6 +42,9 @@ set textwidth=80
 set cc=+1,+2
 hi ColorColumn ctermbg=lightgrey guibg=lightgrey
 
+" Display tabs and trailing spaces visually
+set list listchars=tab:\ \ ,trail:·
+
 " Tabstops ********************************************************************
 set ts=4 sts=4 sw=4 expandtab
 autocmd vimrc FileType ruby setlocal ts=2 sts=2 sw=2 expandtab
