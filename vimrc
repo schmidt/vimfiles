@@ -36,6 +36,8 @@ autocmd vimrc bufwritepost .vimrc,vimrc source $MYVIMRC
 
 " Scrolling *******************************************************************
 set scrolloff=2  " keep the current line two lines above fold while scrolling
+set sidescrolloff=10
+set sidescroll=1
 
 " Highlight lines longer than 80 chars ****************************************
 set textwidth=80
