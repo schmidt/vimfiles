@@ -15,6 +15,7 @@ set backspace=indent,eol,start
 set matchpairs+=<:>
 set ruler
 set showcmd
+set relativenumber
 set vb t_vb= " Turn off bell, this could be more annoying, but I'm not sure how
 syntax on
 
