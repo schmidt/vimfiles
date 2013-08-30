@@ -183,9 +183,12 @@ set foldlevel=20
 
 if has('gui_running')
     set guioptions+=T " add toolbar.
+    if has("gui_gtk2")
+        set guifont=Ubuntu\ Mono\ 11
+    endif
 endif
 
-
+colorscheme macvim
 
 " Plugins *********************************************************************
 
