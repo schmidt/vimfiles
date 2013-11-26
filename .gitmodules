@@ -49,3 +49,9 @@
 [submodule "bundle/vim-yankring"]
 	path = bundle/vim-yankring
 	url = https://github.com/vim-scripts/YankRing.vim.git
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = https://github.com/groenewege/vim-less
+[submodule "bundle/editorconfig-vim"]
+	path = bundle/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
