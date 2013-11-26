@@ -167,6 +167,18 @@ endfun
 autocmd vimrc BufWritePre * call StripTrailingWhitespace()
 autocmd vimrc BufNewFile,BufRead,BufFilePost donotstriponfilesmatchingthisexpression let b:noStripWhitespace=1
 
+function! KeepWhitespace()
+  let b:noStripWhitespace=1
+endfun
+
+function! StripWhitespace()
+  if exists('b:noStripWhitespace')
+    unlet b:noStripWhitespace
+  endif
+endfun
+
+command! KeepWhitespace :call KeepWhitespace()
+command! StripWhitespace :call StripWhitespace()
 
 " Open MacVim with current buffer
 function! Mvim(bang)
