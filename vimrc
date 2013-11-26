@@ -187,7 +187,7 @@ function! Mvim(bang)
     echo 'No write since last change (add ! to override)'
     echohl None
   else
-    execute ":silent !mvim " . @% | q!
+    execute ":silent !gvim " . @% | q!
   endif
 endfun
 
