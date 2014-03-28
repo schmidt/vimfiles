@@ -53,6 +53,7 @@ autocmd vimrc FileType ruby setlocal ts=2 sts=2 sw=2 expandtab
 autocmd vimrc FileType eruby setlocal ts=2 sts=2 sw=2 expandtab
 autocmd vimrc FileType javascript setlocal ts=2 sts=2 sw=2 expandtab
 autocmd vimrc FileType css setlocal ts=2 sts=2 sw=2 expandtab
+autocmd vimrc FileType go setlocal ts=4 sts=4 sw=4 noexpandtab
 
 " Indenting *******************************************************************
 set autoindent  " Automatically set the indent of a new line
@@ -241,3 +242,5 @@ noremap <leader>' :TRecentlyUsedFiles<cr>
 "         exe prefix . "noremap " . key . " <Nop>"
 "     endfor
 " endfor
+" Autoformatting for golang
+autocmd BufWritePre *.go Fmt
