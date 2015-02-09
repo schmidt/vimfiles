@@ -85,6 +85,7 @@ autocmd CmdwinEnter * nnoremap <CR> <CR>
 autocmd BufReadPost quickfix nnoremap <CR> <CR>
 
 map <Leader>/ :nohlsearch<CR>
+map <Leader><Cr> :wa<CR>
 
 " Moving lines (http://vim.wikia.com/wiki/Moving_lines_up_or_down) ************
 " if this ever causes problems - try http://vimcasts.org/episodes/bubbling-text/
