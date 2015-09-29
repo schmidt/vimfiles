@@ -236,3 +236,6 @@ noremap <leader>' :TRecentlyUsedFiles<cr>
 
 " Autoformatting for golang
 autocmd BufWritePre *.go Fmt
+
+
+cnoreabbrev Se Sexplore
