@@ -86,6 +86,7 @@ autocmd BufReadPost quickfix nnoremap <CR> <CR>
 
 map <Leader>/ :nohlsearch<CR>
 map <Leader><Cr> :wa<CR>
+map <Leader>] :wa<CR> :!bundle exec rake<CR><CR>
 
 " Moving lines (http://vim.wikia.com/wiki/Moving_lines_up_or_down) ************
 " if this ever causes problems - try http://vimcasts.org/episodes/bubbling-text/
