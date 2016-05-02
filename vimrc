@@ -231,7 +231,7 @@ sign define SyntasticError text=⚡ texthl=error
 sign define SyntasticWarning text=→ texthl=todo
 
 " tmru ********************************************************************
-noremap <leader>' :TRecentlyUsedFiles<cr>
+noremap <leader>' :Tmru<cr>
 
 
 
