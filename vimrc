@@ -209,6 +209,14 @@ endif
 
 colorscheme macvim
 
+" gf opens the file under cursor in the current window.
+" the following mappings do the same but open the file
+"   gs in a horizontal split
+"   gv in a vertical split
+map gs :above wincmd f<CR>
+map gv :vertical wincmd f<CR>
+
+
 " Plugins *********************************************************************
 
 " YankRing
@@ -229,6 +237,8 @@ command! -nargs=* E Explore
 " fancier signs for errors and warnings in syntastic
 sign define SyntasticError text=⚡ texthl=error
 sign define SyntasticWarning text=→ texthl=todo
+
+let g:syntastic_yaml_checkers = ['yamllint']
 
 " tmru ********************************************************************
 noremap <leader>' :Tmru<cr>
