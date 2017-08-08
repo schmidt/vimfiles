@@ -18,7 +18,6 @@ Initialize all submodules
 Activate the settings by creating a `.vimrc` which uses these `vimfiles`
 
     echo 'source ~/.vim/vimrc' > ~/.vimrc
-    echo 'source ~/.vim/gvimrc' > ~/.gvimrc
 
 You're done.
 
