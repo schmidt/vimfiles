@@ -76,3 +76,9 @@
 [submodule "bundle/vim-logstash"]
 	path = bundle/vim-logstash
 	url = https://github.com/robbles/logstash.vim.git
+[submodule "bundle/vim-slim"]
+	path = bundle/vim-slim
+	url = git://github.com/slim-template/vim-slim.git
+[submodule "bundle/vim-fetch"]
+	path = bundle/vim-fetch
+	url = https://github.com/kopischke/vim-fetch
