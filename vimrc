@@ -87,7 +87,7 @@ autocmd BufReadPost quickfix nnoremap <CR> <CR>
 
 map <Leader>/ :nohlsearch<CR>
 map <Leader><Cr> :wa<CR>
-map <Leader>] :wa<CR> :!bundle exec rake<CR><CR>
+map <Leader>] :wa<CR> :!rake<CR>
 
 " Moving lines (http://vim.wikia.com/wiki/Moving_lines_up_or_down) ************
 " if this ever causes problems - try http://vimcasts.org/episodes/bubbling-text/
@@ -245,6 +245,12 @@ let g:syntastic_yaml_checkers = ['yamllint']
 noremap <leader>' :Tmru<cr>
 
 
+" json formatting *************************************************************
+function! FormatJSON()
+    execute "%!python -c 'import json, sys, collections; print json.dumps(json.load(sys.stdin, object_pairs_hook=collections.OrderedDict), indent=2)'"
+    call StripWhitespace()
+endfun
+noremap =j :call FormatJSON()<CR>
 
 " Autoformatting for golang
 autocmd BufWritePre *.go Fmt
