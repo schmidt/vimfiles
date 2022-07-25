@@ -247,7 +247,7 @@ noremap <leader>' :Tmru<cr>
 
 " json formatting *************************************************************
 function! FormatJSON()
-    execute "%!python -c 'import json, sys, collections; print json.dumps(json.load(sys.stdin, object_pairs_hook=collections.OrderedDict), indent=2)'"
+    execute "%!python -c 'import json, sys, collections; print json.dumps(json.load(sys.stdin, object_pairs_hook=collections.OrderedDict), indent=4)'"
     call StripWhitespace()
 endfun
 noremap =j :call FormatJSON()<CR>
