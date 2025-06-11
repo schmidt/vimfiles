@@ -82,3 +82,6 @@
 [submodule "bundle/vim-fetch"]
 	path = bundle/vim-fetch
 	url = https://github.com/kopischke/vim-fetch
+[submodule "bundle/vim-terraform"]
+	path = bundle/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git
